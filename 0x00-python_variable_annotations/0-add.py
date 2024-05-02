@@ -3,5 +3,5 @@
 
 
 def add(a: float, b: float) -> float:
-	"""Adds two numbers together"""
+	"""takes two float args and return the float sum"""
 	return a + b
