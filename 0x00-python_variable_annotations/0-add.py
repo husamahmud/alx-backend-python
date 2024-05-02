@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-task 1
+type annotated task 1
 """
 
 
