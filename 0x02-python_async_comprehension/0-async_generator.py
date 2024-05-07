@@ -5,13 +5,13 @@ task 0
 
 import asyncio
 import random
+import typing
 
 
-async def wait_random(max_delay: int = 10) -> float:
+async def async_generator() -> typing.Generator[float, None, None]:
 	"""
 	docs
 	"""
-	random_max_delay = random.uniform(0, max_delay)
-	await asyncio.sleep(random_max_delay)
-
-	return random_max_delay
+	for i in range(10):
+		await asyncio.sleep(1)
+		yield random.uniform(0, 10)
